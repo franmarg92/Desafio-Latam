@@ -1,0 +1,22 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-verde{
+    background-color: #28A745;
+}
+
+
+.textf-color{
+    color: #707070;
+}
+
+.textv-color{
+    color: #28A745;
+    font-weight: bold;
+}
+
+.text-white{
+    font-weight: bold;
+}
+
