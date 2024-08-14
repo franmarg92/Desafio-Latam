@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.grid-conteiner{
+    width: 100vh;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 9fr;
+    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-areas: 
+    'navegador buscador'
+    'navegador galeria'
+    'pie-de-pagina galeria'
+    ;
+}
+nav{
+    grid-area: navegador;
+    background-color: aquamarine;
+}
+aside{
+    grid-area: buscador;
+    background-color: rgb(14, 14, 225);
+}
+
+main{
+    grid-area: galeria;
+    background-color: blueviolet;
+
+}
+
+footer{
+    grid-area: pie-de-pagina;
+    background-color: brown;
+}
+
+
