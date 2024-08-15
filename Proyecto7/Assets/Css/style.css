@@ -4,15 +4,13 @@
 }
 
 .grid-conteiner{
-    width: 100vh;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 2fr 9fr;
-    grid-template-rows: 1fr 10fr 1fr;
-    grid-template-areas: 
-    'navegador buscador'
-    'navegador galeria'
-    'pie-de-pagina galeria'
+    grid-template-columns: 1fr;
+grid-template-rows: 1fr;
+grid-template-areas: 
+'navegador'
+'buscador'
+'galeria'
+'pie-de-pagina'
     ;
 }
 nav{
@@ -21,13 +19,43 @@ nav{
 }
 aside{
     grid-area: buscador;
-    background-color: rgb(14, 14, 225);
+    background-color: gray;
 }
+
+.buscador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+ .boton-selector{
+    width: 90%;
+ }
 
 main{
     grid-area: galeria;
-    background-color: blueviolet;
+    background-color: white;
+    
 
+}
+
+.galeria-de-autos{
+    grid-template-columns: 1fr;
+}
+
+
+
+.card{
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.card img{
+    width: 250px;
 }
 
 footer{
@@ -36,3 +64,25 @@ footer{
 }
 
 
+@media(min-width:  576px){
+    .grid-conteiner{
+        height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 9fr;
+    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-areas: 
+    'navegador buscador'
+    'navegador galeria'
+    'pie-de-pagina galeria'
+        
+        ;
+    }
+    
+    .galeria-de-autos{
+        width: 95%;
+        margin: 20px 5px 20px 35px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 15px;
+    }
+}
