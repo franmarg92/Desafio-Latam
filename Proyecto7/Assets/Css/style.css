@@ -1,131 +1,149 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.grid-conteiner{
-    grid-template-columns: 1fr;
-grid-template-rows: 1fr;
-grid-template-areas: 
-'navegador'
-'buscador'
-'galeria'
-'pie-de-pagina'
-    ;
+.grid-conteiner {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "navegador"
+    "buscador"
+    "galeria"
+    "pie-de-pagina";
 }
-nav{
-    grid-area: navegador;
-    background-color: aquamarine;
-}
-aside{
-    grid-area: buscador;
-    background-color: rgb(220, 215, 215);
+nav {
+  grid-area: navegador;
 }
 
-.buscador{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    gap: 10px;
-}
- .boton-selector{
-    width: 90%;
- }
-
-main{
-    grid-area: galeria;
-    background-color: white;
-    
-
-}
-
-.galeria-de-autos{
-    grid-template-columns: 1fr;
-    
-}
-
-
-.selector{
-    
-    display: flex;
-    justify-content: center;
-    color: rgb(44, 44, 210);
-    
-    
-}
-.cajas{
-    border: solid 1px gainsboro;
-    display: flex;
-    
+.conteiner_title{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 
 
-.card{
-    border: 1px solid gray;
-    box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    
-}
-.card img{
-    width: 250px;
-    
+aside {
+  grid-area: buscador;
+  background-color: rgb(220, 215, 215);
 }
 
-.card:nth-child(n+2) {
-    display: none;
+.buscador {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+}
+.boton-selector {
+  margin-bottom: 10px;
+  width: 90%;
 }
 
-footer{
-    grid-area: pie-de-pagina;
-    background-color: rgb(30, 44, 192);
-    color: white;
-    display: flex;
-    justify-content: center;
-    
+main {
+  grid-area: galeria;
+  background-color: white;
 }
 
-.icons{
-    display: flex;
-    justify-content: center;
-    margin: 10px 0 8px 0;
+.galeria-de-autos {
+  grid-template-columns: 1fr;
 }
 
+.selector {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  color: rgb(44, 44, 210);
+  margin: 20px 0 20px 0;
+}
+.cajas {
+  border: solid 1px gainsboro;
+  display: flex;
+  font-size: 20px;
+}
 
-@media(min-width:  576px){
-    .grid-conteiner{
-        height: 100vh;
+.card {
+  border: 1px solid gray;
+  box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.card img {
+  width: 100%;
+}
+
+.boton {
+  margin-bottom: 15px;
+}
+
+.card:nth-child(n + 2) {
+  display: none;
+}
+
+footer {
+  grid-area: pie-de-pagina;
+  background-color: rgb(30, 44, 192);
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 8px 0;
+}
+.icons i{
+    margin: 5px;
+}
+.navbar ul li a:hover{
+    color: black ;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+@media (min-width: 576px) {
+  .grid-conteiner {
+    height: 100vh;
     display: grid;
     grid-template-columns: 2fr 9fr;
     grid-template-rows: 1fr 10fr 1fr;
-    grid-template-areas: 
-    'navegador buscador'
-    'navegador galeria'
-    'pie-de-pagina galeria'
-        
-        ;
-    }
-    
-    .galeria-de-autos{
-        
-        margin: 20px 5px 5px 35px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 15px;
-    }
+    grid-template-areas:
+      "navegador buscador"
+      "navegador galeria"
+      "pie-de-pagina galeria";
+  }
 
-     /* Muestra todas las imágenes en vista de escritorio */
-     .card {
-        display: flex;
-    }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-    /* Muestra todas las tarjetas a partir de la segunda en vista de escritorio */
-    .card:nth-child(n+2) {
-        display: flex;
-    }
+  #navbarNav{
+    text-align: center;
+  }
+
+  #contenedor_global{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .galeria-de-autos {
+    margin: 20px 5px 5px 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+  }
+
+  .card {
+    display: flex;
+  }
+
+  .card:nth-child(n + 2) {
+    display: flex;
+  }
 }
