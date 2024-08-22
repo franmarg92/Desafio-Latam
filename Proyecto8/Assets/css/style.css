@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.grid-conteiner{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15%  0% 70% 15%;
+    grid-template-areas: 
+        'navegador'
+        'aside-bar'
+        'galeria'
+        'pie-de-pagina'
+    ;
+    height: 100vh;
+}
+nav{
+    grid-area: navegador;
+    
+}
+
+.navbar ul li a:hover{
+    
+    font-size: 24px;
+    font-weight: 600;
+}
+
+aside{
+    grid-area: aside-bar;
+    background-color: rgb(18, 18, 226);
+}
+.filtro{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 20px;
+}
+.filtro ul{
+    list-style: none; 
+}
+.filtro ul li p:hover{
+    
+    font-size: 20px;
+}
+main{
+    grid-area: galeria;
+    background-color: white;
+    height: 100%;
+    max-height: max-content;
+    overflow-x: hidden;
+}
+
+.galery-conteiner{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr ;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    margin: 10px 10px 10px 10px;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.product img{
+    width: 80%;
+    background-color: blue;
+    transition: transform 0.5s ease;
+    
+}
+
+.imagen1 img{
+    
+      opacity: 1;
+}
+.imagen1 img:hover{
+    
+      opacity: 0.5;
+}
+.imagen2 img:hover{
+    transform: rotate(360deg);
+}
+
+.imagen3 img:hover{
+    transform: scale(1.2);
+}
+
+.boton{
+    margin-bottom: 10px; 
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: pie-de-pagina;
+    background-color: rgb(33, 87, 193);
+    color: white;
+    font-size:18px;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media(min-width:  576px){
+    .grid-conteiner{
+        display: grid;
+        grid-template-columns: 1.5fr 8.5fr;
+        grid-template-rows: 15% 75% 10%;
+        grid-template-areas: 
+            'navegador navegador'
+            'aside-bar galeria'
+            'pie-de-pagina pie-de-pagina'
+            ;
+    }
+
+    
+}
