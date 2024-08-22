@@ -55,8 +55,8 @@ main{
 
 .galery-conteiner{
     display: grid;
-    grid-template-columns: 0.5fr 0.5fr 0.5fr ;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto ;
+    grid-template-rows: auto;
     gap: 10px;
     margin: 10px 10px 10px 10px;
 }
@@ -124,5 +124,12 @@ footer{
             ;
     }
 
+    .galery-conteiner{
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr ;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+        margin: 10px 10px 10px 10px;
+    }
     
 }
