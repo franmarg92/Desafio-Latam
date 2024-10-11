@@ -17,3 +17,28 @@
 .card img{
     height: 250px;
 }
+
+
+.acepta{
+    color: green;
+}
+
+.noAcepta{
+    color: red;
+}
+
+.inmueble {
+    border: solid 1px black;
+    border-radius: 5px;
+    margin: 0 10px 0 10px;
+    
+    
+    
+    
+}
+
+.inmueble img{
+    width: 100%;
+    height: 350px ;
+}
+
