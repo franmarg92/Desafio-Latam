@@ -33,6 +33,39 @@ const propiedades_alquiler = [
         costo:  2200,
         smoke: false,
         pets: false
+    },
+    {
+        nombre: 'Casa minimalista con piscina',
+        src: 'https://imgar.zonapropcdn.com/avisos/resize/1/00/54/52/81/59/1200x1200/1933947528.jpg?isFirstImage=true',
+        descripcion: 'Excelente casa afuera de la ciudad para ir a descansar.',
+        ubicacion: 'Ruta 58 km 15, San Vicente, GBA Sur',
+        habitaciones: 3,
+        banos: 2,
+        costo:  3200,
+        smoke: true,
+        pets: false
+    },
+    {
+        nombre: 'Casa en estancas del pilar',
+        src: 'https://imgar.zonapropcdn.com/avisos/resize/1/00/51/59/36/34/1200x1200/1923380273.jpg?isFirstImage=true',
+        descripcion: 'Casa nueva a estrenar en barrio cerrado muy tranquilo.',
+        ubicacion: 'Estancias del Pilar, Estancias del Pilar, Pilar',
+        habitaciones: 4,
+        banos: 2,
+        costo:  2200,
+        smoke: false,
+        pets: false
+    },
+    {
+        nombre: 'Casa en Barrio Jardín Botánico',
+        src: 'https://imgar.zonapropcdn.com/avisos/resize/1/00/54/04/82/88/1200x1200/1920920967.jpg?isFirstImage=true',
+        descripcion: 'Elegante casa ubicada en el jardin botanico.',
+        ubicacion: 'Las Orquídeas al 1200, San Carlos de Bariloche, Rio Negro',
+        habitaciones: 23,
+        banos: 1,
+        costo:  4100,
+        smoke: true,
+        pets: true
     }
     ]
 
@@ -71,7 +104,7 @@ for (propiedad of propiedades_alquiler){
     const divEnAlquiler = presentaInmueble(propiedad);
 
     htmlEnAlquiler += `
-    <div class=" col-md-3 inmueble ">
+    <div class=" col-md-3 mt-3 inmueble ">
     ${divEnAlquiler}
     </div>
     `

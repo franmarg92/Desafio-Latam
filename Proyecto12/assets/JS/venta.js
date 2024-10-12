@@ -32,6 +32,42 @@ const propiedades_venta = [
         costo: 4500,
         smoke: false,
         pets: true
+    },
+
+    {
+        nombre: 'Cabaña de lujo',
+        src: 'https://imgar.zonapropcdn.com/avisos/resize/1/00/53/98/27/80/1200x1200/1919296341.jpg?isFirstImage=true',
+        descripcion: 'Cabaña equipada para pasar un lindo invierno y excelentes vistas',
+        ubicacion: 'Chapelco Golf Club, Chapelco Golf & Resort, San Martín de los Andes',
+        habitaciones: 5,
+        banos: 3,
+        costo: 9000,
+        smoke: false,
+        pets: true
+    },
+
+    {
+        nombre: 'Casa con terraza panorámica',
+        src: 'https://imgar.zonapropcdn.com/avisos/resize/1/00/53/95/03/38/1200x1200/1918732739.jpg?isFirstImage=true',
+        descripcion: 'Esta Casa de lujo ofrece una terraza con vistas al lago',
+        ubicacion: 'Chapelco Golf, San Martin de los Andes, Chapelco Golf & Resort, San Martín de los Andes',
+        habitaciones: 4,
+        banos: 2,
+        costo: 12500,
+        smoke: true,
+        pets: true
+    },
+
+    {
+        nombre: 'Penthouse de lujo en San Martin',
+        src: 'https://imgar.zonapropcdn.com/avisos/resize/1/00/54/36/40/52/1200x1200/1929299541.jpg?isFirstImage=true',
+        descripcion: 'Este penthouse de lujo ofrece buena calefacion para el invierno',
+        ubicacion: 'Carlos Lorenzani 0, Los Faldeos de Chapelco, San Martín de los Andes',
+        habitaciones: 5,
+        banos: 5,
+        costo: 8500,
+        smoke: false,
+        pets: false
     }
 ];
 
@@ -66,7 +102,7 @@ let htmlEnVenta = "";
 for (let venta of propiedades_venta){
     const divEnVenta = presentaInmuebleVenta(venta);
     htmlEnVenta += `
-    <div class="col-md-3 inmueble">${divEnVenta}
+    <div class="col-md-3 mt-3 inmueble">${divEnVenta}
     </div>
     `;
 }
