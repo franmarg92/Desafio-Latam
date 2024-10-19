@@ -19,10 +19,10 @@ function actualizarTareas(){
             totalRealizadas ++;
         }
         htmlTarea += `  <div class="tareas">
-                        <p>${tarea.id}</p>
-                        <p>${tarea.descripcion}</p>
-                        <input class="checkBox" type="checkbox" ${estaCheck} onclick="tareaRealizada(${tarea.id})" />
-                        <button onclick="borrarTarea(${tarea.id})" class="accionBoton" type="button">X</button>
+                        <div><p>${tarea.id}</p></div>
+                        <div class="descripcion"><p>${tarea.descripcion}</p></div>
+                        <div><input class="checkBox" type="checkbox" ${estaCheck} onclick="tareaRealizada(${tarea.id})" /></div>
+                        <div class="boton"><button onclick="borrarTarea(${tarea.id})" class="accionBoton" type="button">X</button></div>
                         </div>
         `
         
